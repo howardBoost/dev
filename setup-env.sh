@@ -5,7 +5,7 @@ set -euo pipefail
 # Run this script once after the container starts to restore tools and keys.
 
 # ── SSH key ──────────────────────────────────────────────────────────────────
-SSH_KEY="$HOME/.ssh/id_ed25519_sk"
+SSH_KEY="$HOME/.ssh/id_ed25519"
 
 if [[ -f "$SSH_KEY" ]]; then
   echo "SSH key already exists at $SSH_KEY, skipping generation."
