@@ -1,6 +1,8 @@
 {
 	"name": "Python & Typescript",
-	"image": "ghcr.io/prulloac/base:bookworm",
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
 
 	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
 	"features": {
