@@ -1,0 +1,19 @@
+{
+  "people": [
+    "Howard"
+  ],
+  "projects": [
+    "React",
+    "Flow",
+    "Session",
+    "Redux",
+    "Sd",
+    "Boost",
+    "Analytics",
+    "boost-pfs-backend",
+    "boost-sf-filter-admin-html-v2",
+    "boost-fe-lib",
+    "boost-pfs-fe-api",
+    "apphub-vision"
+  ]
+}
