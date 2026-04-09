@@ -11,10 +11,13 @@
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers/features/python:1": {},
 		"ghcr.io/devcontainers-contrib/features/poetry:2": {}
-	}
+	},
 
 	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
+
+	// 👇 Install mempalace and symlink Copilot config from .github/copilot/
+	"postCreateCommand": "pip3 install mempalace --break-system-packages --quiet && mkdir -p /workspaces/python_typescript/data/.mempalace && mkdir -p /workspaces/python_typescript/data/.copilot"
 
 	// 👇 Configure tool-specific properties.
 	// "customizations": {},

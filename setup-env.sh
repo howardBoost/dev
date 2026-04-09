@@ -27,5 +27,10 @@ else
   echo "Copilot CLI installed."
 fi
 
+# ── mempalace ────────────────────────────────────────────────────────────────
+echo "Installing mempalace..."
+pip install mempalace
+echo "mempalace installed."
+
 echo ""
 echo "Setup complete."
