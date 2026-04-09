@@ -1,27 +1,27 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "Python & Typescript",
-	"build": {
-		"dockerfile": "Dockerfile"
-	},
+	"name": "Python 3",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/python:3-3.14-trixie",
 
-	// 👇 Features to add to the Dev Container. More info: https://containers.dev/implementors/features.
-	"features": {
-		"ghcr.io/devcontainers/features/docker-in-docker:2": {},
-		"ghcr.io/prulloac/devcontainer-features/bun:1": {},
-		"ghcr.io/devcontainers/features/node:1": {},
-		"ghcr.io/devcontainers/features/python:1": {},
-		"ghcr.io/devcontainers-contrib/features/poetry:2": {}
-	},
+	// Mount host data directory into the container
+	"mounts": [
+		"source=/Users/q/work/github.com/apphubdev/ai-workspace-sandbox/data,target=/workspaces/python/data,type=bind,consistency=cached"
+	]
 
-	// 👇 Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
-	// 👇 Install mempalace and symlink Copilot config from .github/copilot/
-	"postCreateCommand": "pip3 install mempalace --break-system-packages --quiet && mkdir -p /workspaces/python_typescript/data/.mempalace && mkdir -p /workspaces/python_typescript/data/.copilot"
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "pip3 install --user -r requirements.txt",
 
-	// 👇 Configure tool-specific properties.
+	// Configure tool-specific properties.
 	// "customizations": {},
 
-	// 👇 Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
