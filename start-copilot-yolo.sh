@@ -8,5 +8,5 @@ if ! command -v copilot >/dev/null 2>&1; then
   exit 1
 fi
 
-echo "Launching: copilot --yolo --config-dir=/workspaces/python/data/copilot"
-exec copilot --yolo --config-dir=/workspaces/python/data/copilot
+echo "Launching: copilot --yolo --config-dir /workspaces/python/data/copilot --additional-mcp-config /workspaces/python/data/copilot/mcp-config.json"
+exec copilot --yolo --config-dir /workspaces/python/data/copilot
